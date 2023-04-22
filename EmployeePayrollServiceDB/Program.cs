@@ -1,10 +1,16 @@
-﻿namespace EmployeePayrollServiceDB
+﻿using System.Data.SqlClient;
+
+namespace EmployeePayrollServiceDB
 {
-    internal class Program
+     class Program
     {
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to ADO.NET");
+
+
+            EmployeeRepo emp = new EmployeeRepo();
+            emp.CheckConnection();
         }
     }
 }
